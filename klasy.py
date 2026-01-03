@@ -10,7 +10,7 @@ class Czlowiek:
         print("Niech powstanie Czlowiek")
 
 # Powstanie obiektu
-# Gotowanie z przepisu
+# Gotowanie z przepisu test
 
 adam = Czlowiek()
 print(adam.gatunek)
