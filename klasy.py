@@ -1,4 +1,7 @@
 # Klasa = Szablon, Przepis
+import random
+
+
 class Czlowiek:
     # Istota
     # atrybuty KLASY
@@ -14,8 +17,11 @@ class Czlowiek:
         self.plec = plec
         # adam.imie = "Adam"
         # ewa.imie = "Ewa"
-    # def __add__(self, other):
-    #     pass
+
+    def __add__(self, other):
+        if isinstance(other, Czlowiek) and self.plec != other.plec:
+            return Dziecko(None, random.choice(("K", "M")))
+
 
 
     # Metoda
@@ -66,3 +72,7 @@ print(adam)
 print(ewa)
 
 print(dir(int))
+
+dziecko = adam + ewa
+print(dziecko)
+
